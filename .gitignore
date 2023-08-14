@@ -1,0 +1,12 @@
+node_modules
+build
+npm-debug.log
+.nyc
+.env
+.DS_Store
+package-lock.json
+test/*.log
+*.yaml
+*.yml
+*.Dockerfile
+.dockerignore
