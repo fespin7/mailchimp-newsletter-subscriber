@@ -6,6 +6,7 @@ const app = express();
 app.use(express.static("public"));
 app.use(express.urlencoded());
 
+const port = process.env.PORT || 80;
 // const apiKey = process.env.API_KEY;
 
 app.get("/", function (req, res) {
@@ -72,6 +73,6 @@ app.post("/failure", function (req, res) {
   res.redirect("/");
 });
 
-app.listen("80", function () {
+app.listen(port, function () {
   console.log("App listen on port 3001");
 });
